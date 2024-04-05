@@ -7,6 +7,8 @@
         body {
             display: flex;
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
         main {
             max-width: 800px;
@@ -25,15 +27,20 @@
             align-items: center;
         }
 
-        img {
+        #logo {
             height: 50%;
             margin-left: 20px;
             filter: blur(0.3px);
         }
+
+        #strava {
+            margin-top: 100px;
+            filter: invert(100%);
+        }
     </style>
 </head>
 <body>
-    <nav><img src="logo-white.png"></nav>
+    <nav><img id="logo" src="logo-white.png"></nav>
     <main>
         <h1>Welcome to Origo Fundraising Support!</h1>
         <p>We're still developing the app to give you the best possible experience but we're glad you have been picked as one of our beta-testers!</p>
@@ -43,5 +50,8 @@
         <p>If you have found a bug or error please urgently contact Josh at <a href="mailto:josh_hales@origofundraising.org">josh_hales@origofundraising.org</a>.</p>
     </main>
    
+    <footer>
+        <img id="strava" src="PoweredByStrava.png"/>
+    </footer>
 </body>
 </html>
